@@ -1,0 +1,16 @@
+[Unit]
+Description=Animals Detection Service
+After=network.target
+
+[Service]
+Type=simple
+User=alexander
+Group=alexander
+WorkingDirectory=/home/alexander/workspace/animals_monitor
+ExecStart=/usr/bin/python3 /home/alexander/workspace/animals_monitor/main.py --no-ui
+Restart=always
+RestartSec=10
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=multi-user.target
