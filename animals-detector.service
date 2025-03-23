@@ -6,8 +6,8 @@ After=network.target
 Type=simple
 User=alexander
 Group=alexander
-WorkingDirectory=/home/alexander/workspace/animals_monitor
-ExecStart=/usr/bin/python3 /home/alexander/workspace/animals_monitor/main.py --no-ui
+WorkingDirectory=/home/alexander/workspace/animals-monitor
+ExecStart=/usr/bin/python3 /home/alexander/workspace/animals-monitor/main.py --no-ui
 Restart=always
 RestartSec=10
 Environment=DISPLAY=:0
